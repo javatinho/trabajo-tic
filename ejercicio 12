@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void cambio (int * n1, int * n2)
+{
+    int aux = *n1;
+    *n1 = *n2;
+    *n2 = aux;
+}
+
+int main()
+{
+    int n1;
+    int n2;
+    printf("Introzca n1:");
+    scanf("\n %d", &n1);
+    
+    printf("Introduzca n2:");
+    scanf("\n %d", &n2);
+    
+    cambio(&n1, &n2);
+    
+    printf("cambio es:n1 es %d y n2 es %d", n1, n2 );
+    
+    return 0;
+    
+}

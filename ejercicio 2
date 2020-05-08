@@ -1,0 +1,21 @@
+int main()
+{
+    
+    int ano;
+    
+    printf("Por favor introduzca el año:");
+    scanf("%d", &ano);
+    printf("\n");
+    
+    if(ano % 4 ==0 && !(ano % 100 ==0 && !ano %400 ==0))
+        
+    {
+    printf("el año es bisiesto");
+        
+    }
+    else
+    {
+    printf("el año no es bisiesto");
+    }
+    return 0;
+}

@@ -1,0 +1,22 @@
+int main()
+{
+  
+  int numero1;
+    
+    printf("Si quieres saber lo que tienes que hacer dependiendo del color del semáforo, introduzca una de las letras siguientes. 1 para verde, 2 para ámbar, 3 para rojo:");
+    scanf("%d", &numero1);
+    printf("\n");
+    switch (numero1){
+    case 1: 
+    printf("Puedes pasar");
+    break;
+    case 2:
+    printf("Puedo cruzar con cuidado");
+    break;
+    case 3: 
+    printf("No puedes pasar");
+    break;
+    }
+    
+    return 0;
+}

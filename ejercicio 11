@@ -1,0 +1,52 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+struct Persona{
+    char nombre[100];
+    int edad;
+};
+int main()
+{
+    struct Persona personas [3];
+    
+    printf("Por favor introduzca el nombre de la primera persona:");
+    scanf("%s" , personas[0].nombre);
+    printf("\n");
+    printf("Por favor introduzca la edad de la primera persona:");
+    scanf("%d" , &personas[0].edad);
+    printf("\n");
+    
+    
+    printf("Por favor introduzca el nombre de la segunda persona:");
+    scanf("%s" , personas[1].nombre);
+    printf("\n");
+    printf("Por favor introduzca la edad de la segunda persona:");
+    scanf("%d" , &personas[1].edad);
+    printf("\n");
+    
+    
+    printf("Por favor introduzca el nombre de la tercera persona:");
+    scanf("%s" , personas[2].nombre);
+    printf("\n");
+    printf("Por favor introduzca la edad de la tercera persona:");
+    scanf("%d" , &personas[2].edad);
+    printf("\n");
+    
+    
+    int i = 0;
+    while (i<=2){
+        if(personas[i].edad>= 18){
+            printf("Los mayores de edad son: %s %s " , personas[i].nombre);
+        }
+        i++;
+    }    
+
+    return 0;
+}
